@@ -23,5 +23,6 @@ app.post("/" ,(req,res) =>{
 
 
 app.put("/:id" ,(req,res) =>{
+    console.log(req.params.id)
     res.status(201).json({id:req.params.id})
 });
