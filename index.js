@@ -20,3 +20,11 @@ app.post("/" ,(req,res) =>{
     console.log(req.body)
     res.status(201).json({msg:"Post Request"})
 });
+
+app.put("/:id" ,(req,res) =>{
+    res.status(201).json({id :req.params.id})
+});
+app.delete("/:id" ,(req,res) =>{
+    console.log(req.body)
+    res.status(201).json({id :req.params.id})
+});
